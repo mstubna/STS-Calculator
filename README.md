@@ -58,7 +58,7 @@ which corresponds to the likelihoods of:
 
 
 | Patient Characteristics | `.json` |
-|--|--|
+|---|---|
 | Age &isin; [1, 110] | `{ age: 50 }` |
 | Gender: Male | `{ gender: "Male" }` |
 | Gender: Female | `{ gender: "Female" }` |
