@@ -56,7 +56,6 @@ which corresponds to the likelihoods of:
 | MV Replacement + CAB | `{ opcab: "Yes, planned", opvalve: "Yes", vsmv: "Yes, planned", vsmvpr:"Replacement" }` |
 | MV Repair + CAB | `{ opcab:"Yes, planned", opvalve:"Yes", vsmv: "Yes, planned", vsmvpr: "Repair" }` |
 
-
 | Patient Characteristics | `.json` |
 |---|---|
 | Age &isin; [1, 110] | `{ age: 50 }` |
@@ -66,19 +65,19 @@ which corresponds to the likelihoods of:
 | Weight (kg) &isin; [10, 250] | `{ weightkg: 100 }` |
 
 | Hemo Data-EF | `.json` |
-|--|--|
+|---|---|
 | Hemo Data-EF Done: No | `{ hdefd: "No" }`|
 | Hemo Data-EF Done: Yes | `{ hdefd: "Yes" }`|
 | Hemo Data-EF Value | `{ hdef: 10 }`|
 
 | Heart Failure within 2 weeks | `.json` |
-|--|--|
+|---|---|
 | Yes | `{ chf: "Yes" }` |
 | No | `{ chf: "No" }` |
 | Unknown | `{ chf: "Unknown" }` |
 
 | Race | `.json` |
-|--|--|
+|---|---|
 | Race Documented: Yes | `{ racedocumented: "Yes" }` |
 | Race Documented: No | `{ racedocumented: "No" }` |
 | Race Documented: Patient declined to disclose | `{ racedocumented: "Patient declined to disclose" }` |
@@ -91,14 +90,14 @@ which corresponds to the likelihoods of:
 | Race - Asian: No | `{ raceasian: "No" }` |
 
 | RF | `.json` |
-|--|--|
+|---|---|
 | RF-Renal Fail-Dialysis: Yes | `{ dialysis: "Yes" }` |
 | RF-Renal Fail-Dialysis: No | `{ dialysis: "No" }` |
 | RF-Renal Fail-Dialysis: Unknown | `{ dialysis: "Unknown" }` |
 | RF-Last Creat Level &isin; [0.1, 30] | `{ creatlst: 20 }` |
 
 | Cardiac Presentation/Symptoms - At Time Of This Admission | `.json` |
-|--|--|
+|---|---|
 | Stable Angina | `{ cardsymptimeofadm: "Stable Angina" }` |
 | Unstable Angina | `{ cardsymptimeofadm: "Unstable Angina" }` |
 | Angina equivalent | `{ cardsymptimeofadm: "Angina equivalent" }` |
@@ -108,7 +107,7 @@ which corresponds to the likelihoods of:
 | No Symptoms | `{ cardsymptimeofadm: "No Symptoms" }` |
 
 | Cardiac Symptoms - At Time Of Surgery | `.json` |
-|--|--|
+|---|---|
 | Stable Angina | `{ cardsymptimeofsurg: "Stable Angina" }` |
 | Unstable Angina | `{ cardsymptimeofsurg: "Unstable Angina" }` |
 | Angina equivalent | `{ cardsymptimeofsurg: "Angina equivalent" }` |
@@ -118,7 +117,7 @@ which corresponds to the likelihoods of:
 | No Symptoms | `{ cardsymptimeofsurg: "No Symptoms" }` |
 
 | MI | `.json` |
-|--|--|
+|---|---|
 | Prior MI: Yes | `{ prevmi: "Yes" }` |
 | Prior MI: No | `{ prevmi: "No" }` |
 | Prior MI: Unknown | `{ prevmi: "Unknown" }` |
@@ -129,7 +128,7 @@ which corresponds to the likelihoods of:
 | MI-When >21 days | `{ miwhen: " >21 Days" }` |
 
 | Cardiac Arrhythmia | `.json` |
-|--|--|
+|---|---|
 | Cardiac Arrhythmia: Yes | `{ arrhythmia: "Yes" }` |
 | Cardiac Arrhythmia: No | `{ arrhythmia: "No" }` |
 | Cardiac Arrhythmia: Unknown | `{ arrhythmia: "Unknown" }` |
@@ -138,7 +137,7 @@ which corresponds to the likelihoods of:
 | Cardiac Arrhythmia - Atrial Fibrillation: None | `{ arrhythafib: "None" }` |
 
 | RF | `.json` |
-|--|--|
+|---|---|
 | Chronic Lung Disease: Mild | `{ chrlungd: "Mild" }` |
 | Chronic Lung Disease: Moderate | `{ chrlungd: "Moderate" }` |
 | Chronic Lung Disease: Severe | `{ chrlungd: "Severe" }` |
@@ -174,7 +173,7 @@ which corresponds to the likelihoods of:
 | Endocarditis: No | `{ infendo: "No" }`|
 
 | Coronary | `.json` |
-|--|--|
+|---|---|
 | Coronary Anatomy/Disease Known: Yes | `{ coranatdisknown: "Yes" }` |
 | Coronary Anatomy/Disease Known: No | `{ coranatdisknown: "No" }`|
 | Num Dis Vessels: One | `{ numdisv: "One" }` |
@@ -183,39 +182,39 @@ which corresponds to the likelihoods of:
 | Num Dis Vessels: None | `{ numdisv: "None" }` |
 
 | Stenonis | `.json` |
-|--|--|
+|---|---|
 | Percent Native Artery Stenosis Known: Yes | `{ pctstenknown: "Yes" }` |
 | Percent Native Artery Stenosis Known: No | `{ pctstenknown: "No" }` |
 | Percent Stenonis - Left Main &isin; [0, 100] | `{ pctstenlmain: 50 }` |
 
 | Status | `.json` |
-|--|--|
+|---|---|
 | Elective | `{ status: "Elective" }` |
 | Urgent | `{ status: "Urgent" }` |
 | Emergent | `{ status: "Emergent" }` |
 | Emergent Salvage | `{ status: "Emergent Salvage" }` |
 
 | Resuscitation | `.json` |
-|--|--|
+|---|---|
 | Yes - Within 1 hour of the start of the procedure | `{ resusc: "Yes - Within 1 hour of the start of the procedure" }`|
 | No | `{ resusc: "No" }` |
 | Yes - More than 1 hour but less than 24 hours of the start of the procedure | `{ resusc: "Yes - More than 1 hour but less than 24 hours of the start of the procedure" }` |
 
 | Cardiogenic Shock | `.json` |
-|--|--|
+|---|---|
 | Yes - At the time of the procedure | `{ carshock: "Yes - At the time of the procedure" }`|
 | No | `{ carshock: "No" }`|
 | Yes, not at the time of the procedure but within prior 24 hours | `{ carshock: "Yes, not at the time of the procedure but within prior 24 hours" }` |
 
 | Classification-NYHA| `.json` |
-|--|--|
+|---|---|
 | Class I | `{ classnyh: "Class I" }` |
 | Class II | `{ classnyh: "Class II" }` |
 | Class III | `{ classnyh: "Class III" }` |
 | Class IV | `{ classnyh: "Class IV" }` |
 
 | IABP | `.json` |
-|--|--|
+|---|---|
 | IABP: Yes | `{ iabp: "Yes" }` |
 | IABP: No | `{ iabp: "No" }` |
 | IABP-When Inserted: Preop | `{ iabpwhen: "Preop" }` |
@@ -223,12 +222,12 @@ which corresponds to the likelihoods of:
 | IABP-When Inserted: Postop | `{ iabpwhen: "Postop" }` |
 
 | Meds-Inotropes | `.json` |
-|--|--|
+|---|---|
 | Yes | `{ medinotr: "Yes" }` |
 | No | `{ medinotr: "No" }` |
 
 | Prev Cardiac Intervent | `.json` |
-|--|--|
+|---|---|
 | Prev Cardiac Intervent: Yes | `{ prcvint: "Yes" }` |
 | Prev Cardiac Intervent: No | `{ prcvint: "No" }` |
 | Previous PCI: Yes | `{ pocpci: "Yes" }` |
@@ -237,7 +236,7 @@ which corresponds to the likelihoods of:
 | Previous PCI-Interval > 6 hrs | `{ pocpciin: " > 6 Hours" }` |
 
 | VD | `.json` |
-|--|--|
+|---|---|
 | VD-Mitral: Yes | `{ vdmit: "Yes" }` |
 | VD-Mitral: No | `{ vdmit: "No" }` |
 | VD-Stenosis-Mitral: Yes | `{ vdstenm: "Yes" }` |
@@ -267,7 +266,7 @@ which corresponds to the likelihoods of:
 
 
 | Incidence | `.json` |
-|--|--|
+|---|---|
 | First cardiovascular surgery | `{ incidenc: "First cardiovascular surgery" }` |
 | First re-op cardiovascular surgery | `{ incidenc: "First re-op cardiovascular surgery" }` |
 | Second re-op cardiovascular surgery | `{ incidenc: "Second re-op cardiovascular surgery" }` |
@@ -275,11 +274,11 @@ which corresponds to the likelihoods of:
 | Fourth or more re-op cardiovascular surgery | `{ incidenc: "Fourth or more re-op cardiovascular surgery" }` |
 
 | Prev CAB | `.json` |
-|--|--|
+|---|---|
 | Yes | `{ prcab: "Yes" }` |
 | No | `{ prcab: "No" }` |
 
 | Prev Valve | `.json` |
-|--|--|
+|---|---|
 | Yes | `{ prvalve: "Yes" }` |
 | No | `{ prvalve: "No" }` |
