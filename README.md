@@ -56,6 +56,7 @@ which corresponds to the likelihoods of:
 | MV Replacement + CAB | `{ opcab: "Yes, planned", opvalve: "Yes", vsmv: "Yes, planned", vsmvpr:"Replacement" }` |
 | MV Repair + CAB | `{ opcab:"Yes, planned", opvalve:"Yes", vsmv: "Yes, planned", vsmvpr: "Repair" }` |
 
+
 | Patient Characteristics | `.json` |
 |--|--|
 | Age &isin; [1, 110] | `{ age: 50 }` |
